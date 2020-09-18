@@ -31,7 +31,7 @@ app.get('/pokemon', async (request, response) => {
 
 app.get('/batch-pokemon', async (request, response) => {
   const p = new Pokemon();
-  // To Be Implemented
+  // TO BE IMPLEMENTED
 });
 
 // start the Express server

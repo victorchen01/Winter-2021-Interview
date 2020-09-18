@@ -1,6 +1,6 @@
 # Programming Question
 ### Description
-In this project, there is currently an endpoint implemented that allows you to get information about a Pokemon using it's name
+In this project, there is currently an endpoint implemented that allows you to get information about a Pokemon using its name
 
 Using a **similar project structure** to the existing one, you will create a new endpoint that takes in a parameter names, which is a comma separated list of strings
 
@@ -86,10 +86,8 @@ npm run test
 
 # Interview Rooms
 ### Technical Interview Room (Join this room if you have questions while doing the interview)
-https://meet.google.com/qcj-nzjp-mzj
+TBD
 
 ### UOttawa Interviews: (Join this room for your scheduled personal interview if you are from UOttawa)
-https://meet.google.com/boy-rkom-fpy
+TBD
 
-### Carleton Interviews: (Join this room for your scheduled personal interview if you are from Carleton)
-https://meet.google.com/rky-ycrx-dyn
