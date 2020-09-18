@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import fetch from 'node-fetch';
 
 export interface IPokemon {
   moves: string[];
@@ -18,7 +18,7 @@ export interface IResponse {
 }
 
 export class Pokemon {
-  url = "https://pokeapi.co/api/v2/pokemon";
+  url = 'https://pokeapi.co/api/v2/pokemon';
 
   /**
    * Gets the list of Pokemon info objects
@@ -39,7 +39,7 @@ export class Pokemon {
       const json: IResponse = await res.json();
       return json;
     } else {
-      throw new Error("Name Invalid");
+      throw new Error('Name Invalid');
     }
   }
 
