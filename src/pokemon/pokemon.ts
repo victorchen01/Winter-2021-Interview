@@ -1,9 +1,10 @@
 import fetch from 'node-fetch';
 
 export interface IPokemon {
-  moves: string[];
+  id: number;
   weight: number;
   height: number;
+  moves: string[];
 }
 
 export interface IResponse {
