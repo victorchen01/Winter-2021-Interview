@@ -18,7 +18,7 @@ app.get('/pokemon', async (request, response) => {
     const result = await p.getPokemonByName(String(request.query.name));
     // Sends back the id of the pokemon
     response.send({
-      id: result.id
+      data: result
     });
   } catch (e) {
     console.log(e);
@@ -27,11 +27,6 @@ app.get('/pokemon', async (request, response) => {
       error: 'Could not find pokemon'
     })
   }
-});
-
-app.get('/batch-pokemon', async (request, response) => {
-  const p = new Pokemon();
-  // TO BE IMPLEMENTED
 });
 
 // start the Express server

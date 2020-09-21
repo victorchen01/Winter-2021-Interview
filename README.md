@@ -1,8 +1,6 @@
 # Programming Question
-### Description
+### Current Setup
 In this project, there is currently an endpoint implemented that allows you to get information about a Pokemon using its name
-
-Using a **similar project structure** to the existing one, you will create a new endpoint that takes in a parameter names, which is a comma separated list of strings
 
 - Under the src\pokemon folder of the project, you will see that there is a class called Pokemon that currently allows users to get one Pokemon by its name
 
@@ -10,29 +8,41 @@ Using a **similar project structure** to the existing one, you will create a new
 
 ### Required New Functionality
 
-- Create a new endpoint /batch-pokemon that accepts a GET request with a 'names' parameter. You may use any existing methods in your implementation. **Make sure you read the api docs carefully before implementing this**
+- Modify the existing endpoint to parse the 'name' parameter as a comma separated list of names. You may use any existing methods in your implementation. 
 
 - You will then call the pokemon api and retrieve each pokemon requested in the list of names
+**Make sure you read the api docs carefully before implementing this**
 
 - Ensure that there is proper error handling, if one of the names is invalid, you should handle this while still returning information about all valid pokemon.
 
 ### Request Format
 The request parameter has the following format:
 ```
-?names="Pikachu,Squirtle"
+?name="Pikachu,Squirtle,INVALIDNAME"
 ```
 
-Your response json should have the following format: 
+Your response json should have the following format and should only include the following fields: 
 ```
-[
-    {
-    id: 1,
-    name: 'Pikachu',
-    height: 35,
-    weight: 20,
-    moves: ['a', 'b', 'c'] (list of move names)
-    },
-]
+{
+    data: [
+        {
+            id: 1,
+            name: 'Pikachu',
+            height: 35,
+            weight: 20,
+            moves: ['a', 'b', 'c'] (list of move names)
+        },
+        {
+            id: 2,
+            name: 'Squirtle',
+            height: 42,
+            weight: 30,
+            moves: ['e', 'f', 'g'] (list of move names)
+        },
+    ],
+    error: "Some pokemon names were invalid"
+}
+
 
 ```
 
