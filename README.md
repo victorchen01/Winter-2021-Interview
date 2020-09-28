@@ -96,8 +96,8 @@ npm run test
 
 # Interview Rooms
 ### Technical Interview Room (Join this room if you have questions while doing the interview)
-TBD
+Technical Interview Room: https://meet.google.com/hun-dcci-zwc
 
 ### UOttawa Interviews: (Join this room for your scheduled personal interview if you are from UOttawa)
-TBD
+Personal Interview Room: https://meet.google.com/jxz-ogkw-fqb
 
